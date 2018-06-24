@@ -1,0 +1,11 @@
+version: '2'
+services:
+    hotelshare-postgresql:
+        image: postgres:9.6.5
+        # volumes:
+        #     - ~/volumes/jhipster/hotelshare/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=hotelshare
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
